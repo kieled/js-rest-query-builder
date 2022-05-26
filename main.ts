@@ -1,4 +1,4 @@
-const buildQuery = (props: fetchGroupsProps, filters: string[], search: string[], ordering: string[]) => {
+function buildQuery<T>(props: T, filters: string[], search: string[], ordering: string[]) {
     let query = '?'
 
     if (filters.length) {
